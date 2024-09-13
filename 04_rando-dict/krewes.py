@@ -5,6 +5,9 @@ Random Selection of Devos
 2024-09-13
 time spend: """
 
+
+import random
+
 krewes = {
            4: [ 
 		'DUA','TAWAB','EVA','JACK','VICTOR','EVAN','JASON','COLYI','IVAN','TANZEEM',
@@ -21,5 +24,9 @@ krewes = {
          }
 
 def randDevo():
-    pd = randint(4,5)
-    
+    pd = random.randint(4,5)
+    List = krewes[pd]
+    devo = random.randint(0, len(List)-1)
+    return List[devo]
+
+print(randDevo())
