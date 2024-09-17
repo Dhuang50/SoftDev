@@ -3,7 +3,7 @@ CAD
 SoftDev
 Random Selection of Devos
 2024-09-13
-time spend: """
+time spend: 1"""
 
 
 import random
@@ -24,9 +24,9 @@ krewes = {
          }
 
 def randDevo():
-    pd = random.randint(4,5)
-    List = krewes[pd]
-    devo = random.randint(0, len(List)-1)
-    return List[devo]
+    pd = random.randint(4,5)  #Selects random period 
+    List = krewes[pd]        #Sets List as the list corresponding to the key selected
+    devo = random.randint(0, len(List)-1) #Selects random index for List
+    return List[devo]        #Returns random devo
 
 print(randDevo())
