@@ -5,6 +5,7 @@ Parsing Lists and Random Selection of Devos and their duckies
 2024-09-17
 time spend: 1"""
 
+import random
 krewes = []
 
 def createList():
@@ -12,13 +13,13 @@ def createList():
     ind = List.read().split("@@@")
     for ppl in ind:
         info = ppl.split("$$$")
-        for i in info:
-            p = {
-                "pd" : i[0],
-                "devo" : i[1],
-                "ducky" : i[2]
-                }
-            krewes.append(p)
-    
+        krewes.append({"pd" : info[0], "devo" : info[1], "ducky" : info[2]})
+
+def randomDevo():
+    choice = random.randint(0, len(krewes)-1) 
+    devo = krewes[choice]
+    print(devo["devo"] + " " + devo["pd"] + " " + devo["ducky"])
+  
 createList()
-print(krewes)
+
+randomDevo()
