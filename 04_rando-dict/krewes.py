@@ -3,7 +3,7 @@ CAD
 SoftDev
 K04 - Random Selection of Devos
 2024-09-13
-time spend: 1"""
+time spend: 0.7 hour"""
 
 
 import random
