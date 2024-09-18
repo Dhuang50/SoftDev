@@ -3,7 +3,7 @@ CAD
 SoftDev
 K05 - Parsing Lists and Random Selection of Devos and their duckies
 2024-09-17
-time spend: 1"""
+time spend: 1 hour"""
 
 import random
 krewes = []
