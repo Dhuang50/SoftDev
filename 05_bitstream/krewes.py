@@ -1,7 +1,7 @@
 """Danny Huang
 CAD
 SoftDev
-Parsing Lists and Random Selection of Devos and their duckies
+K05 - Parsing Lists and Random Selection of Devos and their duckies
 2024-09-17
 time spend: 1"""
 
