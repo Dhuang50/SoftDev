@@ -7,14 +7,20 @@ Time Spent: 1 hour
 """
 
 import csv
+import random
 
 all_occupations = []
 
 with open("occupations.csv", mode = "r") as file:
-    lines = file.readline()
-    pSum = 0
-    for line in lines:
-        pSum += float(line[1])*10
-        all_occupations.append({"Job Class": line[0], "Percentage": float(line[1]), "pSum": pSum})
+    csvFile = csv.reader(file)
+    pSum = 0 
+    for line in csvFile:
+        if not(line[0] == "Job Class" or line[0] == "Total"):
+            pSum += float(line[1])*10
+            all_occupations.append({"Job Class": line[0], "Percentage": float(line[1]), "pSum": pSum})
         
-print(all_occupations)
+job = random.randint(0, 998)
+for i in all_occupations:
+    if job < i["pSum"]:
+        print(i)
+        break
