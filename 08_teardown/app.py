@@ -1,22 +1,29 @@
-# your heading here
+'''
+CAD - Caden Khu, Aditya Anand, Danny Huang
+SoftDev
+K08 - teardown - exploring flask through past experiences
+2024 - 09 - 20
+Time Spent: 1 hour 
+
+'''
 
 '''
 DISCO:
-<note any discoveries you made here... no matter how small!>
+ - Print() prints into the terminal whereas return is outputted through the local host page
+ - Why does __name__ return __main__ instead of __return?
+ - What exactly is a Flask object? 
 
 QCC:
-0. 
-1. 
-2. 
-3. 
-4. 
-5. 
+0. We have seen similar syntax in Java
+1. When writing paths in the terminal and when referencing file paths in code.
+2. This prints to the terminal
+3. It will print __main__ which is the __name__
+4. It will appear in the page opened by the local host link. We know because that is what happened. 
+5. I have seen similar constructs in other object oriented languages like java and js where the methods for a class is called. 
  ...
 
 INVESTIGATIVE APPROACH:
-<Your concise summary of how
- you and your team set about
- "illuminating the cave of ignorance" here...>
+Our team used a virtual enviornment to download flask and ran the python file within the venv. We then used the output of the file to make inferences about the code.
 '''
 
 
