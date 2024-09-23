@@ -6,21 +6,21 @@ K06 - CSV!
 Time Spent: 1 hour
 """
 
-import csv
+import csv    # Import required libraries
 import random
 
-all_occupations = []
+all_occupations = []  #Creates list of dictionaries for all occupations 
 
-with open("occupations.csv", mode = "r") as file:
-    csvFile = csv.reader(file)
-    pSum = 0 
-    for line in csvFile:
-        if not(line[0] == "Job Class" or line[0] == "Total"):
-            pSum += float(line[1])*10
-            all_occupations.append({"Job Class": line[0], "Percentage": float(line[1]), "pSum": pSum})
+with open("occupations.csv", mode = "r") as file:  # Opens CSV File
+    csvFile = csv.reader(file)   # Reads CSV File
+    pSum = 0  #Creates pSum variable which will be used as divider
+    for line in csvFile:   #Loops through CSV object
+        if not(line[0] == "Job Class" or line[0] == "Total"):   #Takes out first and last row
+            pSum += float(line[1])*10   #Calculates pSum value
+            all_occupations.append({"Job Class": line[0], "Percentage": float(line[1]), "pSum": pSum})  #Creates dictionary and adds to list
         
-job = random.randint(0, 998)
-for i in all_occupations:
-    if job < i["pSum"]:
-        print(i)
-        break
+job = random.randint(0, 998)   #Random Integer
+for i in all_occupations:  #Loops through list
+    if job < i["pSum"]:   #Finds range the random integer is in
+        print(i) #Prints the selected occupation
+        break   #Breaks out of loop as range was found
