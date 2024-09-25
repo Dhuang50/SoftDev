@@ -49,12 +49,12 @@ app = Flask(__name__)           #create instance of class Flask
 
 @app.route("/")                 #assign fxn to route
 def hello_world():
-    print("the __name__ of this module is... ")
+    print("the __name__ of this module is... ")  
     print(__name__)
-    a = "What Departure Tim Ng, Danny Huang, Will Nzeuton"
-    b = str(jobList)
-    c = randomOcc(f)
-    return f" {a} <br><br> {b} <br><br> {c}"
+    a = "What Departure Tim Ng, Danny Huang, Will Nzeuton" #Creates header
+    b = str(jobList)  #Assigns the list as variable
+    c = randomOcc(f)  #Assigns the result as a variable
+    return f" {a} <br><br> {b} <br><br> {c}" # return a fstring which has the variable inside curly brackets
 
 
 if __name__ == "__main__":      # true if this file NOT imported
