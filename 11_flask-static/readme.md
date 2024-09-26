@@ -34,3 +34,7 @@ path/to/myworkshop$ tree 11_flask-static
 [related](https://ukulelemagazine.com/lessons/uke-lesson-3-chords-and-the-truth-country-songwriting-legend-harlan-howard)  
 [related](https://en.wikipedia.org/wiki/Plain_text)  
 
+Notes:
+foo.txt: Since it is a text file we assumed that this would not show up in the page displayed by the app. Additionally another reason why we though it up not show up would be because it does not show up in the python code so there is nothing connecting it to the app. It will be interesting though if it does show up and create questions of why it would happen. After clicking a 404 error showed up which aligns with what we thought.
+
+foo.html: For the reason that it was not referred to in the python file, we thought that it will also show a 404 error but instead the page showed up. So we infer that the path to this file is also somehow assigned when assigning the root route.
