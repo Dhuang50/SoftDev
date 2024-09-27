@@ -5,10 +5,10 @@
 """
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Q0:
-It will return a error saying that the render_template function was not found.
+There will be no error if we go to the main path, but there will be no error if we go to /my_foist_template
 
 Q1:
-No, turns out we can not find the correct url. But we found the correct url later: https://http://127.0.0.1:5000/my_foist_template
+No, turns out we can not find the correct url. But we found the correct url later: https://127.0.0.1:5000/my_foist_template
 
 Q2:
 The parameters tell us which html file to use as template and the values for the variables used in the template
@@ -22,6 +22,7 @@ Notes:
 - Contrary to expectations the code did not return a error when render_template was removed, would there be an error when the path to the html file is typed?
 - When you use the template, the route for the url is not the path to the html in your directory anymore, it is the route that you set in your decorator.
     - The path to the html file in your directory no longer can be accessed as a url. 
+- The % command allows you to use python syntax inside the html file. The variables are listed in double curly brackets
 """
 
 
