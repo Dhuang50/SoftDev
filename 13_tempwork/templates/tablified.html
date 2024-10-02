@@ -1,0 +1,29 @@
+<!-- 
+ Wen Zhang, Jackie Zeng, Danny Huang
+Made in Africa
+SoftDev
+K13 -- creating template to make html table
+2024-09-30
+Time spent: 30 mins-->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> {{ title }} </title>
+    </head>
+
+    <body> 
+        <h1> {{ Heading }} </h1>
+        <h2> {{ TNPGROSTER}} </h2>
+        <h3> {{ Job }} </h3>
+
+        <table>
+             <tr><th> {{ Occ }} </th></tr>
+             {% for item in collection %}
+                 <tr><td>{{ item[0] }}</td> <td><a href="{{ item[2] }}">{{ item[2] }}</a></td><td>{{ item[1] }}</td></tr>
+  
+            {% endfor %}
+        </table>
+    </body>
+</html>
