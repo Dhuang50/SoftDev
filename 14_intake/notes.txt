@@ -1,0 +1,28 @@
+< your heading here >
+
+DISCO:
+* Statments like "127.0.0.1 - - [07/Oct/2024 11:37:44] "GET /auth HTTP/1.1" 200" show what paths were accessed
+* Any username produces the same output
+* When testmod0.py is imported it's name is not main. 
+-----------------------------------------------------------------------
+
+
+Q/C/C:
+* Why does testmod0.py also run when it is only imported and a flask object was not created in it
+* Does importing testmod0.py create a separate flask object?
+* 
+-----------------------------------------------------------------------
+
+
+OTHER?
+* 
+* 
+* 
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
