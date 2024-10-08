@@ -1,16 +1,31 @@
-< your heading here >
-
+Danny Huang
+CAD - Caden Khuu, Aditya Anand, Danny Huang
+SoftDev
+2024-10-07
+K14 - Requests on a client server
+Time Spent: 0.5 hr
 DISCO:
 * Statments like "127.0.0.1 - - [07/Oct/2024 11:37:44] "GET /auth HTTP/1.1" 200" show what paths were accessed
 * Any username produces the same output
 * When testmod0.py is imported it's name is not main. 
+* There is a text box to input a username and the page saying "hah hooh HAAH" appears no matter what text is inputted.
+* There is a KeyError if there is no username.
+* If you run just testmod0.py in the terminal, it just prints the text in the file.
+* testmod0 is being imported as a package in app.py
+* Args gives the arguments within the request and header gives info about the request
+* When print(request.args['username']) is uncommented in the root path there is a BadRequestkeyError because there is no value for username yet in the dictionary for args
+* sub1 is submission 1
+* Arguments for Request carries over from root path to /auth
 -----------------------------------------------------------------------
 
 
 Q/C/C:
 * Why does testmod0.py also run when it is only imported and a flask object was not created in it
 * Does importing testmod0.py create a separate flask object?
-* 
+* How would you return different results depending on what username you write?
+* Could you store user data to be accessed later (e.g. for a login page)?
+* What is sub1 and how was it added to args, how can we add more subs?
+* Why does ?username=ads&sub1=Submit+Query show up in the URL?
 -----------------------------------------------------------------------
 
 
