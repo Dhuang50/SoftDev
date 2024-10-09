@@ -1,0 +1,19 @@
+CAD - Caden, Aditya, Danny
+SoftDev
+K16 - Flask-Sessions - Using Flask and cookies
+2024 - 10 - 09
+
+DESIGN
+1) Import Flask Session
+2) Import os
+
+
+DIS
+- Payloads are data that is send in a response. Encoded payload means that the cookie data is hidden, but can be decoded with scheme.
+- Anyone can view the cookie but you need a private key to change it
+- Put private key in package?
+- Private key encodes in HTTPS transmission?
+
+QCC
+- What is thrown when request.cookies.get(KEY) is missing key?
+- What does cookie payload mean?

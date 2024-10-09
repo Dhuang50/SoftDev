@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- 
+SAD - Sascha, Aditya, Danny
+SoftDev
+K15 - Flask-Form - Using Flask and request
+2024 - 10 - 09
+-->
+
+<html>
+
+  <head>
+    <title> ECHO </title>
+  </head>
+
+  <body>
+    <h1>
+      Howdy, friends!
+    </h1>
+
+
+    <h3>
+      Enter something in either submit box below to proceed.
+    </h3>
+    <form action="/auth" method="GET">
+      <input type="text" name="username">
+      <input type="submit" name="sub1" value="Submit Through GET">
+    </form>
+    <br>
+    <form action="/auth" method="POST">
+      <input type="text" name="username">
+      <input type="submit" name="sub1" value="Submit Through POST">
+    </form>
+  </body>
+
+</html>
