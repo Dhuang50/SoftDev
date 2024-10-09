@@ -1,0 +1,8 @@
+SAD - Sascha, Aditya, Danny
+SoftDev
+K15 - Flask-Form - Using Flask and request
+2024 - 10 - 09
+
+- Value in input in html display names to the submit buttons
+- Name on the other hand is what the input would be referred to in the backend
+- The arguments for GET and POST request have to be accessed differently
