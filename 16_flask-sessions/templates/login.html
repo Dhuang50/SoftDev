@@ -19,15 +19,21 @@ K15 - Flask-Form - Using Flask and request
 
 
     <h3>
-      Enter something in either submit box below to proceed.
+      Enter Your Username and Password
     </h3>
     <form action="/auth" method="GET">
-      <input type="text" name="username">
+      <input type="text" name="username" value="Username">
+      <br><br>
+      <input type="text" name="password" value="Password">
+      <br><br>
       <input type="submit" name="sub1" value="Submit Through GET">
     </form>
     <br>
     <form action="/auth" method="POST">
-      <input type="text" name="username">
+      <input type="text" name="username" value="Username">
+      <br><br>
+      <input type="text" name="password" value="Password">
+      <br><br>
       <input type="submit" name="sub1" value="Submit Through POST">
     </form>
   </body>

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <!-- 
-SAD - Sascha, Aditya, Danny
+CAD - Caden, Aditya, Danny
 SoftDev
-K15 - Flask-Form - Using Flask and request
+K16 - Flask-Sessions - Using Flask and cookies
 2024 - 10 - 09
 -->
 
@@ -18,11 +18,10 @@ K15 - Flask-Form - Using Flask and request
       Howdy, {{username}}
     </h1>
 
-    <h3>
-      Method: {{request}}
-    </h3>
-    <br>
-    {{explanation}}
+    <form action="/logout">
+        <input type="submit" name="sub2" value="Sign Out">    
+    </form>
+
   </body>
 
 </html>

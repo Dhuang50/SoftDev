@@ -5,7 +5,14 @@ K16 - Flask-Sessions - Using Flask and cookies
 
 DESIGN
 1) Import Flask Session
-2) Import os
+2) Import os in separate file
+3) Import that file
+4) Create Session
+5) Create private key in separate file
+6) Use Post as method for request
+7) When Logged in, set session["username"] = request.cookies.get("username")
+8) When logged out, session.pop("username")
+
 
 
 DIS
@@ -13,7 +20,9 @@ DIS
 - Anyone can view the cookie but you need a private key to change it
 - Put private key in package?
 - Private key encodes in HTTPS transmission?
+- Use GET when developing for transparency and convenience to debug
 
 QCC
 - What is thrown when request.cookies.get(KEY) is missing key?
 - What does cookie payload mean?
+- How do you use the private key when it is created?
