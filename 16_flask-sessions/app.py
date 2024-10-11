@@ -32,12 +32,15 @@ def disp_loginpage():
 
 @app.route("/auth", methods=['GET', 'POST'])
 def authenticate():
-    session["username"] = request.cookies.get("username")
-    session["password"] = request.cookies.get("password")
-    print(request.args["username"])
-    print(request.cookies.get("username"))
+    session["username"] = request.args["username"]
+    session["password"] = request.args["password"]
     return render_template('response.html', username = session["username"]) #response to a form submission
 
+@app.route("/logout", methods=['GET', 'POST'])
+def logout():
+    session.pop("username")
+    session.pop("password")
+    return render_template('logout.html')
 
     
 if __name__ == "__main__": #false if this file imported as module
