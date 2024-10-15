@@ -46,3 +46,10 @@ related:
 
 <br>
 
+<br>
+Notable: 
+- When inline styling, you have to place the css in quotes and set equal to style
+- divs can be used to separate content
+- id and classes can be used in html and css to help differentiate styles for different sections. 
+  - id in css has a . and classes have #
+
