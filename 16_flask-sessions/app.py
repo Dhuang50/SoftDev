@@ -33,8 +33,8 @@ def disp_loginpage():
 
 @app.route("/auth", methods=['GET', 'POST'])
 def authenticate():
-    session["username"] = request.args["username"]
-    session["password"] = request.args["password"]
+    session["username"] = request.form["username"]
+    session["password"] = request.form["password"]
     return render_template('response.html', username = session["username"]) #response to a form submission
 
 @app.route("/logout", methods=['GET', 'POST'])
