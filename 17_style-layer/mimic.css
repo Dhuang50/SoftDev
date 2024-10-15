@@ -1,0 +1,47 @@
+body {
+    background-color:dimgray; 
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color:white; 
+    background-color: lightgrey; 
+    text-align: center;
+}
+
+#left{
+    display:inline-block; 
+    width: 15%; 
+    height: 100%;
+}
+
+#r1 {
+    color: black; 
+    display: block;
+}
+
+#r2{
+    color: lightgray; 
+    font-size: 15px;
+}
+
+#right{
+    display:inline-block; 
+    position:absolute; 
+    margin-right: 20px;
+}
+
+h2 {
+    color: black; 
+    font-weight:bold; 
+    display: block; 
+    margin-top: 0px;
+}
+
+.para {
+    font-size: 15px; 
+}
+
+#para1 {
+    margin-top: 0px;
+}
