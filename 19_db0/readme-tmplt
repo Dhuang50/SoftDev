@@ -1,0 +1,22 @@
+'''
+CAD - Caden, Aditya, Danny
+SoftDev
+K19 - db0 - Filling db with sqlite
+2024 - 10 - 21
+Time Spent:  1
+'''
+
+DISCOVERIES:
+----------------------------------------------------
+* csv.DictReader() automatically puts the read CSV file in dicitonary
+* another thing
+* ...and more
+====================================================
+
+
+QUESTIONS/COMMENTS/CONCERNS:
+----------------------------------------------------
+Q: a question
+Q: another question
+C: a comment or concern
+====================================================

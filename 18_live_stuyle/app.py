@@ -1,8 +1,8 @@
 '''
 CAD - Caden, Aditya, Danny
 SoftDev
-K16 - Flask-Sessions - Using Flask and cookies
-2024 - 10 - 09
+K18 - live_stuyle - styling and flask
+2024 - 10 - 17
 Time Spent:  
 '''
 
