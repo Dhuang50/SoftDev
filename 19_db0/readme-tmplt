@@ -8,15 +8,16 @@ Time Spent:  1
 
 DISCOVERIES:
 ----------------------------------------------------
-* csv.DictReader() automatically puts the read CSV file in dicitonary
-* another thing
-* ...and more
+* csv.DictReader() automatically puts the read CSV file in a list of dicitonaries
+* Setting the list from csv.DictReader() to a list defined outside the with statement does allow the list to be used outside the with statement more than once?
+* You can index dictionaries in f'strings
+* if you use "" for f'strings then quotes within the string must be ''
 ====================================================
 
 
 QUESTIONS/COMMENTS/CONCERNS:
 ----------------------------------------------------
-Q: a question
-Q: another question
-C: a comment or concern
+Q: Can you delete tables in sqlite?
+Q: Do you put all the data from the two csvs into one table?
+C: How can we insert Null into the table from python?
 ====================================================
