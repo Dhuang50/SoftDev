@@ -39,4 +39,4 @@ What are call outs used for? How are they different from grid containers
 
 q0: 0
 
-q1:
+q1: We prefer Tailwind as its aesthetics fits us best. 
