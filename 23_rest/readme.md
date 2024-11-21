@@ -1,0 +1,2 @@
+1) uResp.read() returns a JSON object which is formatted the same way as a python dicitonary but can not be treated as a python dicitonary.
+2) To convert from JSOn objects to python dictionaries you can use the JSON.loads() function. 
