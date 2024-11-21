@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <title>Bootstrap Demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Cool Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Cool Sidebar</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Top</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#dark_mode" class="nav-link">Dark Mode</a>
+                            <a href="#accordion" class="nav-link">Accordion</a>
+                            <a href="#forms" class="nav-link">Forms</a>
+                            <a href="#nav" class="nav-link">Nav Bar</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5 pt-5">
+        <h1>Made in Antartica -  Wen Zhang, Danny Huang</h1>
+        <div class="row" data-bs-theme="light">
+            <div class="col">
+                <input type="text" class="form-control form-control-sm" placeholder="Light mode form" aria-label="Light mode">
+            </div>
+        </div>
+        <div class="row mt-3" data-bs-theme="dark">
+            <div class="col">
+                <input type="text" class="form-control form-control-sm" placeholder="Dark mode form" aria-label="Dark mode">
+            </div>
+        </div>
+        <h2 id="accordion" class="mt-5">Accordion</h2>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        boom
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                        wazzup
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        boom2
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        yoyoyoyo.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 id="forms" class="mt-5">Forms</h2>
+        <div class="row">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <input type="text" class="form-control form-control-sm" placeholder="Small form" aria-label="Small form">
+            </div>
+        </div>
+        <h2 id="table" class="mt-5">Table</h2>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">Class</th>
+                    <th scope="col">Heading</th>
+                    <th scope="col">Heading</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Default</th>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                </tr>
+                <tr class="table-primary">
+                    <th scope="row">Primary</th>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                </tr>
+                <tr class="table-secondary">
+                    <th scope="row">Secondary</th>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                </tr>
+                <tr class="table-success">
+                    <th scope="row">Success</th>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                </tr>
+                <tr class="table-danger">
+                    <th scope="row">Danger</th>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                </tr>
+                <tr class="table-warning">
+                    <th scope="row">Warning</th>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                </tr>
+                <tr class="table-info">
+                    <th scope="row">Info</th>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                </tr>
+                <tr class="table-light">
+                    <th scope="row">Light</th>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                </tr>
+                <tr class="table-dark">
+                    <th scope="row">Dark</th>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 id="alerts" class="mt-5">Alerts</h2>
+        <div class="alert alert-primary alert-dismissible fade show" role="alert">
+            Primary Alert
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Learning from KT's On-Ramp</p>
+    </footer>
+</body>
+</html>
