@@ -1,0 +1,2 @@
+- Elif does not exist in js, rather it is else if 
+-In racket you can call statements with multiple ifs using cond with each instance in square brackets, and conditions in parentheses within the brackets. 

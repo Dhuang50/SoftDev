@@ -5,7 +5,7 @@
 ;SoftDev PD 5
 ;W27 - Intro to JS
 ;2025-01-06
-;time:
+;time: 1
 
 (define fact (lambda (n)
               (if(= n 1)
