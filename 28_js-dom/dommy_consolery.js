@@ -103,6 +103,10 @@ let gcd = function(a, b){
     return gcd
 }
 
+addItem("The 6th number of the Fibonacci sequence is " + fib(5))
+addItem("Factorial of 5 is " + fact(5))
+addItem("The GCD of 48 and 72 is " + gcd(48, 72))
+
 // In addition to the style shown above,
 //  you are encouraged to test drive the "arrow function syntax" as shown below.
 //  Note anything notable.
