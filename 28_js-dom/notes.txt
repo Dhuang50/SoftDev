@@ -1,0 +1,17 @@
+Team JD :: Jayden Zhang, Danny Huang
+SoftDev pd5
+K28 -- Getting more comfortable with the dev console and the DOM
+2025-01-07t
+
+DISCO:
+- you can access an HTML item in JS using it's ID: getElementById.
+- similarly, you can also access an HTML tag in JS using getElementsByTagName.
+- you can create an HTML item in JS using createElement.
+- you can delete an HTML item using remove()
+- you can use a shorthand for creating functions using =>
+- can access classes of certain tags using .classList and add()
+
+QCC:
+- uses of const vs var?
+- what other shortcuts can you use in JS?
+- why does JS sometimes need and not need ";"? (mentioned in class but we wanted more clarifcation)
