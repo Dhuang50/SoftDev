@@ -1,0 +1,30 @@
+Danny Huang, Abidur Rahman
+BabyShark
+SoftDev
+K35 - mxrobbotto : Creating Flask App with Copilot
+Time Spend: 7 hrs
+
+
+Us: Your team has been contracted to create a web log hosting site, with the following features:
+
+    Users will have to register to use the site.
+    A logged-in user will be able to
+        Create a new blog
+        Update their blog by adding a new entry
+        View and edit their own past entries
+        View the blogs of other users
+Flask will serve as your web server/delivery framework.
+SQLite3 will serve as your backend data storage system.
+
+    As you grown your "sql-fu", always start with Devo Knowledge Base (QAF, n&c) and primary documentation. (...and if none of these have the answer you seek, and you find a SO post that is actually useful, or any other diamond in the rough of the Intertrash, add it to Devo KB)
+    Get creative, think boldly, get your hands dirty as you experiment via the sqlite3 shell and see what works/sticks...
+
+Multiple Python files should be used, as necessary, for application layer. (a.k.a. "middleware" modules, etc.)
+
+Copilot: It looks like you are working on a Flask-based web log hosting site and referred to a specific file in your repository. I'll go ahead and fetch the content of the __init__.py file from your repository to help you get started with the project.
+
+Let's retrieve the content of the file.
+
+The file __init__.py in the repository Dhuang50/SoftDev appears to be empty or inaccessible. Could you please confirm if the file is correctly specified or if there are any specific parts of the project you would like to start with?
+
+Us: the file should be empty, please use the file path: Dhuang50/SoftDev/k35/app/__init__.py
