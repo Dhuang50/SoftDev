@@ -1,0 +1,13 @@
+Danny Huang, Abidur Rahman
+BabyShark
+SoftDev
+K35 - mxrobbotto : Creating Flask App with Copilot
+Time Spend: 7 hrs
+
+DISCO:
+
+Q/C/C:
+some areas of interest...
+q0: How many tries did it take to "get it right?"
+q1: Did you catch any errors? If so, how did you notice, and what did you do?
+q2: 
