@@ -13,3 +13,5 @@ login_manager.login_view = 'login'
 login_manager.login_message_category = 'info'
 
 from k35.app import routes
+if __name__ == '__main__':
+    app.run(debug=True)
