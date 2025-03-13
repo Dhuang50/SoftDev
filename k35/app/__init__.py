@@ -1,6 +1,6 @@
 from flask import Flask
 import os
-from k35.app.models import init_db
+from .models import init_db
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'your_secret_key'
@@ -16,3 +16,8 @@ import k35.app.routes
 
 # Initialize the database
 init_db()
+
+from k35.app import app
+
+if __name__ == '__main__':
+    app.run(debug=True)
