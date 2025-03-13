@@ -1,6 +1,6 @@
 import sqlite3
 from flask import g
-from k35.app import app
+from app import app
 
 DATABASE = app.config['DATABASE']
 
