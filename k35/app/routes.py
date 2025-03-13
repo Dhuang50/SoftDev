@@ -19,7 +19,7 @@ def register():
         email = request.form['email']
         password = generate_password_hash(request.form['password'])
         try:
-            execute_db("INSERT INTO user (username, email, password) VALUES (?, ?, ?)", (username, email, password))
+            create_user(username, email, password)
             flash('Your account has been created! You are now able to log in', 'success')
             return redirect(url_for('login'))
         except sqlite3.IntegrityError:
@@ -33,7 +33,7 @@ def login():
     if request.method == 'POST':
         email = request.form['email']
         password = request.form['password']
-        user = query_db("SELECT * FROM user WHERE email = ?", (email,), one=True)
+        user = get_user_by_email(email)
         if user and check_password_hash(user['password'], password):
             session['user_id'] = user['id']
             flash('Login successful', 'success')
@@ -54,7 +54,7 @@ def new_post():
     if request.method == 'POST':
         title = request.form['title']
         content = request.form['content']
-        execute_db("INSERT INTO post (title, content, user_id) VALUES (?, ?, ?)", (title, content, session['user_id']))
+        create_post(title, content, session['user_id'])
         flash('Your post has been created!', 'success')
         return redirect(url_for('home'))
     return render_template('create_post.html')
