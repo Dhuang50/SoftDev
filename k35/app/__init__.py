@@ -1,6 +1,6 @@
 from flask import Flask
 import os
-from models import init_db
+from .models import init_db
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'your_secret_key'
