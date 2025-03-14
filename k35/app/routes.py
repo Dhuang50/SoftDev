@@ -1,5 +1,5 @@
 from flask import render_template, request, redirect, url_for, flash, session
-from . import app
+from app import app
 import sqlite3
 from werkzeug.security import generate_password_hash, check_password_hash
 from models import query_db, execute_db
