@@ -17,7 +17,3 @@ from . import routes
 # Initialize the database
 init_db()
 
-from . import app
-
-if __name__ == '__main__':
-    app.run(debug=True)
