@@ -40,6 +40,15 @@ def execute_db(query, args=()):
     db.commit()
     cur.close()
 
+def create_user(username, email, password):
+    execute_db("INSERT INTO user (username, email, password) VALUES (?, ?, ?)", (username, email, password))
+
+def get_user_by_email(email):
+    return query_db("SELECT * FROM user WHERE email = ?", (email,), one=True)
+
+def create_post(title, content, user_id):
+    execute_db("INSERT INTO post (title, content, user_id) VALUES (?, ?, ?)", (title, content, user_id))
+
 def init_db():
     with app.app_context():
         db = get_db()
